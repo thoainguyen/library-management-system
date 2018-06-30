@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>626</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="src.qrc">
+    <normaloff>:/images/iconwindow.png</normaloff>:/images/iconwindow.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>36</width>
+    <height>36</height>
+   </size>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionHome"/>
+   <addaction name="separator"/>
+   <addaction name="actionUser"/>
+   <addaction name="separator"/>
+   <addaction name="actionNotice"/>
+   <addaction name="actionMail"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="actionabout"/>
+   <addaction name="separator"/>
+   <addaction name="actionrule"/>
+   <addaction name="separator"/>
+   <addaction name="actioncontact"/>
+   <addaction name="separator"/>
+   <addaction name="actionSignUp"/>
+   <addaction name="actionSignIn"/>
+   <addaction name="actionSignOut"/>
+  </widget>
+  <action name="actionUser">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/images/Oxygen-Icons.org-Oxygen-Apps-preferences-contact-list.ico</normaloff>:/images/Oxygen-Icons.org-Oxygen-Apps-preferences-contact-list.ico</iconset>
+   </property>
+   <property name="text">
+    <string>User</string>
+   </property>
+   <property name="toolTip">
+    <string>Thông tin người dùng</string>
+   </property>
+   <property name="statusTip">
+    <string>Thông tin người dùng/tài khoản liên kết người dùng</string>
+   </property>
+  </action>
+  <action name="actionSignUp">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/images/signupicon.png</normaloff>:/images/signupicon.png</iconset>
+   </property>
+   <property name="text">
+    <string>SignUp</string>
+   </property>
+   <property name="toolTip">
+    <string>Đăng kí tài khoản mới</string>
+   </property>
+   <property name="statusTip">
+    <string>Đăng kí tài khoản mới</string>
+   </property>
+  </action>
+  <action name="actionSignIn">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/images/signin.ico</normaloff>:/images/signin.ico</iconset>
+   </property>
+   <property name="text">
+    <string>SignIn</string>
+   </property>
+   <property name="toolTip">
+    <string>Đăng nhập</string>
+   </property>
+   <property name="statusTip">
+    <string>Đăng nhập vào hệ thống</string>
+   </property>
+  </action>
+  <action name="actionSignOut">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/images/signout.ico</normaloff>:/images/signout.ico</iconset>
+   </property>
+   <property name="text">
+    <string>SignOut</string>
+   </property>
+   <property name="toolTip">
+    <string>Thoát</string>
+   </property>
+   <property name="statusTip">
+    <string>Thoát chương trình</string>
+   </property>
+  </action>
+  <action name="actionHome">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/images/home.ico</normaloff>:/images/home.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+   <property name="toolTip">
+    <string>Đăng xuất</string>
+   </property>
+   <property name="statusTip">
+    <string>Trở về trang chủ</string>
+   </property>
+  </action>
+  <action name="actioncontact">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/images/about-us-icon-15.png</normaloff>:/images/about-us-icon-15.png</iconset>
+   </property>
+   <property name="text">
+    <string>contact</string>
+   </property>
+   <property name="toolTip">
+    <string>Liên Hệ</string>
+   </property>
+   <property name="statusTip">
+    <string>Liên hệ với nhân viên thư viện</string>
+   </property>
+  </action>
+  <action name="actionrule">
+   <property name="icon">
+    <iconset theme="rule" resource="src.qrc">
+     <normaloff>:/images/rule.png</normaloff>:/images/rule.png</iconset>
+   </property>
+   <property name="text">
+    <string>rule</string>
+   </property>
+   <property name="toolTip">
+    <string>Quy Định</string>
+   </property>
+   <property name="statusTip">
+    <string>Tổng hợp nội quy thư viện</string>
+   </property>
+  </action>
+  <action name="actionabout">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/images/contact.png</normaloff>:/images/contact.png</iconset>
+   </property>
+   <property name="text">
+    <string>about</string>
+   </property>
+   <property name="toolTip">
+    <string>Nhóm phát triển</string>
+   </property>
+   <property name="statusTip">
+    <string>Thông tin tác giả</string>
+   </property>
+  </action>
+  <action name="actionNotice">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/images/notice.png</normaloff>:/images/notice.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notice</string>
+   </property>
+   <property name="toolTip">
+    <string>Thông báo</string>
+   </property>
+  </action>
+  <action name="actionMail">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/images/m.png</normaloff>:/images/m.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mail</string>
+   </property>
+   <property name="toolTip">
+    <string>Hộp thư</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>
