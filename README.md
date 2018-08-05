@@ -1,4 +1,4 @@
-"# Library_Management_System"
+# Library_Management_System
 
 -- Sau khi build bằng QtCreator, copy hai thư mục trong folder "data"
  là "database.sqlite" và "noiquy.txt" vào thư mục debug(hoặc release)
