@@ -1,8 +1,12 @@
-# Library_Management_System
+# Library Management System
 
--- Sau khi build bằng QtCreator, copy hai thư mục trong folder "data"
- là "database.sqlite" và "noiquy.txt" vào thư mục debug(hoặc release)
- chứa file LIBPRO.exe mà QtCreator build ra, đảm bảo database.sql và noiquy.txt cùng đường dẫn với LIBPRO.exe
 
--- Để test thử: đăng nhập vào tài khoản admin: thoaikhmt pass: a
-   sau đó tạo các tài khoản mới, và vào lại tài khoản admin để cấp quyền (bằng cách sửa đổi vai trò của tài khoản trong mục quản lý của admin)
+* After building project via QtCreator, you must copy two files from folder `data` to folder `debug` (maybe `release` due to build mode), which are `database.sqlite` and `noiquy.txt`. Ensure that those files are same directory with `LIBPRO.exe`.
+
+* For trying, you must had an admin account, from it you will grant access role to other :
+* Default admin are : thoaikhmt, pass: a
+* System has three roles:
+  * Admin : Have full right to accessed systems.
+  * Librarian : Can accept or denined for borrow book request from users.
+  * User : Can borrow and lend book.
+
