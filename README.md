@@ -1,5 +1,9 @@
 # Library Management System
 
+<div aligin="center">
+ <img src="https://www.pixel-studios.com/blog/wp-content/uploads/2018/12/012.jpg"/>
+</div>
+
 
 * After building project via QtCreator, you must copy two files from folder `data` to folder `debug` (maybe `release` due to build mode), which are `database.sqlite` and `noiquy.txt`. Ensure that those files are same directory with `LIBPRO.exe`.
 
